@@ -1,0 +1,661 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css"/>
+    <title>eDeepie Newsletter</title>
+    <style type="text/css">
+        
+        
+    /* arrow blink effect */
+        .blink_me {
+            -webkit-animation-name: blinker;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+
+            -moz-animation-name: blinker;
+            -moz-animation-duration: 1s;
+            -moz-animation-timing-function: linear;
+            -moz-animation-iteration-count: infinite;
+
+            animation-name: blinker;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @-moz-keyframes blinker {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+        @-webkit-keyframes blinker {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+
+        @keyframes blinker {  
+            0% { opacity: 1.0; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1.0; }
+        }
+        
+        /* arrow blink effect */
+        /* Client-specific Styles */
+        
+        #outlook a {
+            padding: 0;
+        }
+        /* Force Outlook to provide a "view in browser" menu link. */
+        
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+        
+        .ExternalClass {
+            width: 100%;
+        }
+        /* Force Hotmail to display emails at full width */
+        
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+        /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+        
+        #backgroundTable {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            line-height: 100% !important;
+        }
+        
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+        }
+        
+        a img {
+            border: none;
+        }
+        
+        .image_fix {
+            display: block;
+        }
+        
+        p {
+            margin: 0px 0px !important;
+        }
+        
+        table td {
+            border-collapse: collapse;
+        }
+        
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        
+        a {
+            /*color: #e95353;*/
+            text-underline: none!important;
+            text-decoration: none;
+            text-decoration: none!important;
+        }
+        /*STYLES*/
+        
+        table[class=full] {
+            width: 100%;
+            clear: both;
+        }
+        .social-links{
+            font-size: 26px;
+            color: #ffffff;
+            margin-right: 10px;
+            border-radius: 40px;
+            width: 24px;
+            height: 24px;
+            padding: 8px;
+            border: 1px solid #F24741;
+            background-color: #F24741;
+        }
+        /*################################################*/
+        /*IPAD STYLES*/
+        /*################################################*/
+        
+        @media only screen and (max-width: 640px) {
+            a[href^="tel"],
+            a[href^="sms"] {
+                text-decoration: none;
+                color: #ffffff;
+                /* or whatever your want */
+                pointer-events: none;
+                cursor: default;
+            }
+            .mobile_link a[href^="tel"],
+            .mobile_link a[href^="sms"] {
+                text-decoration: default;
+                color: #ffffff !important;
+                pointer-events: auto;
+                cursor: default;
+            }
+            table[class=devicewidth] {
+                width: 440px!important;
+                text-align: center!important;
+            }
+            table[class=devicewidthinner] {
+                width: 420px!important;
+                text-align: center!important;
+            }
+            table[class="sthide"] {
+                display: none!important;
+            }
+            img[class="bigimage"] {
+                width: 420px!important;
+                height: 219px!important;
+            }
+            img[class="col2img"] {
+                width: 420px!important;
+                height: 258px!important;
+            }
+            img[class="image-banner"] {
+                width: 440px!important;
+                height: 106px!important;
+            }
+            td[class="menu"] {
+                text-align: center !important;
+                padding: 0 0 10px 0 !important;
+            }
+            td[class="logo"] {
+                padding: 10px 0 5px 0!important;
+                margin: 0 auto !important;
+            }
+            img[class="logo"] {
+                padding: 0!important;
+                margin: 0 auto !important;
+            }
+        }
+        /*##############################################*/
+        /*IPHONE STYLES*/
+        /*##############################################*/
+        
+        @media only screen and (max-width: 480px) {
+            a[href^="tel"],
+            a[href^="sms"] {
+                text-decoration: none;
+                color: #ffffff;
+                /* or whatever your want */
+                pointer-events: none;
+                cursor: default;
+            }
+            .mobile_link a[href^="tel"],
+            .mobile_link a[href^="sms"] {
+                text-decoration: default;
+                color: #ffffff !important;
+                pointer-events: auto;
+                cursor: default;
+            }
+            table[class=devicewidth] {
+                width: 280px!important;
+                text-align: center!important;
+            }
+            table[class=devicewidthinner] {
+                width: 260px!important;
+                text-align: center!important;
+            }
+            table[class="sthide"] {
+                display: none!important;
+            }
+            img[class="bigimage"] {
+                width: 260px!important;
+                height: 136px!important;
+            }
+            img[class="col2img"] {
+                width: 260px!important;
+                height: 160px!important;
+            }
+            img[class="image-banner"] {
+                width: 280px!important;
+                height: 68px!important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <!-- Start of preheader -->
+
+    </p>
+    <!-- End of preheader -->
+
+    <p>
+    </p>
+    <p>
+        <!-- start of header -->
+
+    </p>
+    <!-- end of header -->
+
+    <p>
+    </p>
+    <p>
+        <!-- image + text -->
+
+    </p>
+    <p>
+    </p>
+    <p>
+        <!-- start textbox-with-title -->
+
+    </p>
+    <!-- end of textbox-with-title -->
+
+    <p>
+    </p>
+    <p>
+        <!-- start of left image -->
+
+    </p>
+    <!-- end of left image -->
+
+    <p>
+    </p>
+    <p>
+        <!-- start of left image -->
+
+    </p>
+    <!-- end of left image -->
+
+    <p>
+    </p>
+    <p>
+        <!-- fulltext -->
+
+    </p>
+    <!-- end of fulltext -->
+
+    <p>
+    </p>
+    <p>
+        <!-- Start of 2-columns -->
+
+    </p>
+    <!-- End of 2-columns -->
+
+    <p>
+    </p>
+    <p>
+        <!-- 3-columns -->
+
+    </p>
+    <!-- end of 3-columns -->
+
+    <p>
+    </p>
+    <p>
+        <!-- Full + text -->
+
+    </p>
+    <p>
+    </p>
+    <p>
+        <!-- Start of preheader -->
+
+    </p>
+    <!-- End of preheader -->
+
+    <p>
+    </p>
+    
+    
+    
+    
+    
+    
+    
+    
+    <table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="innerbg">
+                    </div>
+                    <table width="580" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!-- logo -->
+
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0" align="left" class="devicewidth">
+                                        <tbody>
+                                            <tr>
+                                                <td valign="middle" width="100%" style="    text-align: -webkit-center;
+                                                                                        padding: 10px 0 0px 0px;
+                                                                                        " class="logo">
+                                                    <div class="imgpop">
+                                                        <img class="img-responsive" src="images/logocap.png" style="    width: 94px;
+                                                                                                                    position: absolute;
+                                                                                                                    left: 519px;
+                                                                                                                    top: 40px;">   
+                                                        <a href="#"><img src="images/mobileLOgo.png" width="100" alt="logo" border="0" style="    display: block;border: none;outline: none;text-decoration: none;width: 270px;margin-top: 55px;height: 120px;" class="logo" /></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif;font-size: 18px;text-align: center;line-height: 40px;
+                   ">
+<img src="images/quote.PNG">
+                                                </td>
+                                                 </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- End of logo -->
+
+                                    <!-- menu -->
+
+                                    <table width="280" cellpadding="0" cellspacing="0" border="0" align="right" class="devicewidth">
+                                        <tbody>
+                                            <tr>
+                                                <td width="270" valign="middle" style="font-family: Helvetica, Arial, sans-serif;font-size: 14px; color: #ffffff;line-height: 24px; padding: 10px 0;" align="right" class="menu">
+                                                    <p>
+                                                    </p>
+                                                </td>
+                                                <td width="20">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- End of Menu -->
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="innerbg">
+                    </div>
+                    <table bgcolor="#ffffff" width="580" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidth">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table width="540" align="center" cellspacing="0" cellpadding="0" border="0" class="devicewidthinner">
+                                        <tbody>
+                                            <tr>
+                                                <!-- start of image -->
+
+                                                <td align="center">
+                                                    <div class="imgpop">
+                                                    <!--    <div class="uploader_wrap" style="width: 540px; margin-top: 121px; opacity: 0;">
+                                                            <div class="upload_buttons">
+                                                                <div class="img_link">
+                                                                </div>
+                                                                <div class="img_upload">
+                                                                </div>
+                                                                <div class="img_edit">
+                                                                </div>
+                                                            </div>
+                                                        </div> -->
+                                                        <a href="#"><img width="350px" height="450px" border="0" height="282" alt="" style="display:block; border:none; outline:none; text-decoration:none;" src="images/banner.jpg" class="bigimage img-responsive"/></a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- end of image -->
+
+                                            <!-- Spacing -->
+
+                                            <tr>
+                                                <td width="100%" height="20">
+                                                </td>
+                                            </tr>
+                                            <!-- Spacing -->
+
+                                            <!-- title -->
+
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif; font-size: 24px; color: #333333; text-align:center;line-height: 20px;padding:10px;font-weight:600;">
+                                                    <p>
+                                                        Ho Ho Ho! We wish you a Merry Christmas!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <!-- end of title -->
+
+                                            <!-- content -->
+
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: #747F7F; text-align:left;line-height: 24px;padding:10px;">
+                                                    <p>
+                                                        We are a startup focused to provide best services to our clients around the world.</p>
+
+                                                       <p style="padding-top:10px;"> This Christmas, we thought of gifting everyone with something useful on this occasion of Christmas.</p>
+
+                                                    <p style="padding-top:10px;"> So, here's a free Wordpress Plugin Snowy Bells, which enables a snowfall effect on your Wordpress. Also, there's an option to upload a Christmas track to amuse visitors on your Wordpress website.
+                                                        
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <!-- end of content -->
+
+                                            <!-- button -->
+
+                                            <tr>
+                                                <td>
+                                                    <div class="buttonbg">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <!-- /button -->
+
+
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="innerbg">
+                    </div>
+                    <table bgcolor="#ffffff" width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                        <tbody>
+
+
+                            <tr>
+                                <td>
+                                    <table width="540" align="center" cellpadding="0" cellspacing="0" border="0" class="devicewidthinner" >
+                                        <tbody>
+                                            <!-- Title -->
+
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif;font-size: 24px;color: #232020;text-align:center;">
+                                                    <p>
+                                                        Here's a free gift plugin for you.!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <!-- End of Title -->
+
+                                            <!-- spacing -->
+
+                                            <tr>
+                                                <td height="5">
+                                                </td>
+                                            </tr>
+                                            <!-- End of spacing -->
+
+                                            <!-- content -->
+
+
+                                            
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif; font-size: 40px;text-align:center;">
+                                                    <i class="blink_me fa fa-arrow-down"></i>
+                                                </td>
+                                            </tr>
+                                            <!-- End of content -->
+
+                                            <!-- Spacing -->
+
+                                            <tr>
+                                                <td width="100%" height="10">
+                                                </td>
+                                            </tr>
+                                            <!-- Spacing -->
+
+                                            <!-- button -->
+
+                                            <tr>
+                                                <td>
+                                                    <div class="buttonbg">
+                                                    </div>
+                                                    <table height="36" align="center" valign="middle" border="0" cellpadding="0" cellspacing="0" class="tablet-button" style="border-radius: 4px; font-size: 13px; font-family: Helvetica, arial, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: 300; padding-left: 25px; padding-right: 25px; background-color: #F24741; background-clip: padding-box;" bgcolor="#eb4646">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding-left:30px;font-size:20px;line-height:1; padding-right:30px;font-family:Helvetica, arial, sans-serif; text-align:center;  color:#ffffff; font-weight: 300;" width="auto" align="center" valign="middle" height="36">
+                                                                    <span style="color: #ffffff; font-weight: 300;"> <a style="color: #ffffff; text-align:center;text-decoration: none;" href="#" tabindex="-1">DOWNLOAD</a></span>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif; font-size: 14px; color: #95a5a6;line-height: 20px;padding-top:20px;">
+                                                    <p>
+                                                        We worked hard to make this gift & would love to hear your valuable feedback or a simple Merry Christmas wish will make our day.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: Helvetica, arial, sans-serif;font-size: 28px;color: #232020;padding-top:20px; text-align:center;">
+                                                    <p>
+                                                    And we wish you a very Happy New Year..!
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <!-- /button -->
+
+                                            <!-- Spacing -->
+
+                                            <tr>
+                                                <td width="100%" height="30">
+                                                </td>
+                                            </tr>
+                                            <!-- Spacing -->
+                                            <!--- social links section starts -->
+                                            <table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" >
+                                                <tbody>
+                                                    
+                                                    <tr>
+                                                        <td style="text-align:center;">
+                                                            <span style="text-decoration: none; color: #0db9ea"><span style="color: rgb(136, 136, 136); font-family: sans-serif; font-size: 18px; line-height: 24px;"><a style="color: rgb(136, 136, 136);" href="mailto: contact@edeepie.com">contact@edeepie.com</a> | <a style="color: rgb(136, 136, 136);" href="tel:+917206399993">+91-7206399993</a></span></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;"><img class="img-responsive" style="width: 100px;height: 50px;margin-top:20px;margin-bottom:20px;" src="images/mobileLOgo.png"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 10px;color: #999999;padding-bottom:10px;">
+                                                            <a href="#"><i class="fa fa-facebook social-links" style="padding-left: 10px;width: 20px;"></i></a>
+                                                            <a href="twitter.com"><i class="fa fa-twitter social-links"></i></a>
+                                                            <a href="#"><i class="fa fa-google-plus-square social-links"></i></a>
+                                                            <a href="#"><i class="fa fa-linkedin-square social-links"></i></a>
+                                                        </td>
+                                                    </tr>
+
+                                                    
+                                                    <!-- Spacing -->
+
+                                                    <tr>
+                                                        <td width="100%" height="5">
+                                                        </td>
+                                                    </tr>
+                                                    <!-- Spacing -->
+
+                                                    <tr>
+                                                        <td align="center" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 10px;color: #999999">
+                                                            <p>
+                                                                <span style="text-decoration: none; color: #0db9ea"><span style="color: rgb(136, 136, 136); font-family: sans-serif; font-size: 11px; line-height: 24px; background-color: rgb(221, 221, 221);">Copyright eDeepie 2015 | <a style="color: rgb(136, 136, 136);" href="edeepie.com">www.edeepie.com</a></span></span>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <table width="100%" bgcolor="#f6f4f5" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td width="100%">
+                    <div class="innerbg">
+                    </div>
+                    <table width="580" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+                        <tbody>
+
+                            <!-- Spacing -->
+
+                            <tr>
+                                <td width="100%" height="5">
+                                </td>
+                            </tr>
+                            <!-- Spacing -->
+
+                        </tbody>
+                    </table>
+                    
+                    
+
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
